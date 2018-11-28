@@ -22,7 +22,18 @@ valores */
 body {
   font-family: 'Source Sans Pro', sans-serif;
 }
+
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Fjalla One', sans-serif;
+  /* peso de fuente: de 100 mas delgado a 900 mas gruesa*/
+  font-weight: 400;
+  /* font-style: italic; */
 }
 
+h1 {
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: -.2px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
