@@ -19,6 +19,11 @@ valores */
 /* selector id */
 /* #portafolio */
 
+/* gris oscuro = #1d252c
+gris claro = #626262
+background gris = #1b2127
+celeste = #026fff*/
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -35,7 +40,11 @@ h1 {
   line-height: 1.5;
   letter-spacing: -.2px;
   text-transform: uppercase;
-  text-decoration: underline;
+  text-decoration: none;
+  color: white;
+}
+h1 strong {
+  color: #026fff;
 }
 
 .project-details{
@@ -46,4 +55,17 @@ h1 {
 }
 .hero {
   height: 300px;
+  background-image: url('../img/hero.jpg');
+  background-color: #1b2127;
+  background-size: 500px 300px;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+.header {
+  background-color: #1b2127;
+  color: white;
+}
+.header a {
+  color: white;
+  text-decoration: none;
 }
