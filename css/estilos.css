@@ -97,3 +97,24 @@ h1 strong {
   color: white;
   text-decoration: none;
 }
+.flexbox {
+  display: flex;
+  /* por defecto es row, lo indique o no */
+  /* flex-direction: row; */
+  /* modificar a forma columna */
+  /* flex-direction: column; */
+
+  flex-wrap: wrap;
+  /* nowrap: elementos que no caigan */
+  /* wrap: elementos caen */
+}
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border: 1px solid red;
+  /* solo para hijos con padres display flex */
+  /* para elementos sin modificar el ancho y alto: */
+  /* Valores de encogimiento, de 0 a 1 */
+  flex-shrink: 0;
+}
