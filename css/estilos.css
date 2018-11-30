@@ -98,20 +98,35 @@ h1 strong {
   text-decoration: none;
 }
 .flexbox {
+  height: 200px;
+  border: 1px solid blue;
+
   display: flex;
   /* por defecto es row, lo indique o no */
   /* flex-direction: row; */
   /* modificar a forma columna */
   /* flex-direction: column; */
-
   flex-wrap: wrap;
   /* nowrap: elementos que no caigan */
   /* wrap: elementos caen */
+  justify-content: space-around;
+  /* justify-content: flex-start; a la izquierda */
+  /* justify-content: flex-end; hacia la derecha */
+  /* justify-content: center; en el centro */
+  /* justify-content: space-between; espacio de elementos, no espacio a extremos */
+  /* justify-content: space-evenly; mismo espaciado a extremos y entre elementos */
+  /* justify-content: space-around; la mitad de espacio en extremos y espacio entre elementos */
+  /* propiedad a los elementos (se le indica al padre) */
+  align-items: center;
+  /* align-items: flex-start; elementos hacia arriba */
+  /* align-items: flex-end; elementos hacia abajo */
+  /* align-items: center; elementos en el centro */
+  align-items: flex-end;
 }
 .box {
-  width: 200px;
-  height: 200px;
-  margin: 20px;
+  width: 50px;
+  height: 50px;
+  /* margin: 5px; */
   border: 1px solid red;
   /* solo para hijos con padres display flex */
   /* para elementos sin modificar el ancho y alto: */
