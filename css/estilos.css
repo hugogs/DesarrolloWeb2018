@@ -195,6 +195,50 @@ figure {
   /* Valores de encogimiento, de 0 a 1 */
   flex-shrink: 0;
 }
+.event-list {
+  display: flex;
+}
+.event-list-title {
+  margin-left: 10px;
+}
+.event {
+  /* border: 1px solid red; */
+  margin: 10px;
+  width: 480px;
+  /* para que ocupe el tamaño designado */
+  flex-shrink: 0;
+  border-radius: 15px;
+  /* Para ocultar elemntos que desborden un borde especificicado */
+  overflow: hidden;
+  background: #f4fbff;
+}
+.event img {
+  width: 480px;
+  height: 200px;
+  /* para mantener la imagen, no distorcionada: */
+  object-fit: cover;
+}
+.event-detail {
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: white;
+  /* posicion relativa */
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.event-description {
+  text-align: left;
+}
+.event-url {
+  color: #056fff;
+  /* El borde toma el color anterior (padre a hijo) */
+  border: 1px solid;
+  padding: 5px 20px;
+  /* Para quitar el color de un ancla (etiqueta a) */
+  text-decoration: none;
+  border-radius: 5px;
+}
 .footer {
   color: white;
   background: #1b2127;
